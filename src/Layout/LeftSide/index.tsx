@@ -12,7 +12,7 @@ import UserProfile from "./components/UserProfile";
 const LeftSide = () => {
   return (
     <aside className="fixed top-0 pr-3 ">
-      <Logo className="mt-3 w-8 text-blue-400 text-white" />
+      <Logo className="mt-3 w-8 text-white" />
       <ul className="mt-5">
         <LeftSidbarItme text="Home" Icon={Home} active={true} />
         <LeftSidbarItme text="Explore" Icon={Explore} />

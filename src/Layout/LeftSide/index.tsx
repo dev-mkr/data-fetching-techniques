@@ -1,12 +1,12 @@
 import { ReactComponent as Logo } from "../../assets/twitterLogo.svg";
-import { ReactComponent as Home } from "../../assets/Home.svg";
-import { ReactComponent as Explore } from "../../assets/Explore.svg";
-import { ReactComponent as Notifications } from "../../assets/Notifications.svg";
-import { ReactComponent as Messages } from "../../assets/Messages.svg";
+import { ReactComponent as Home } from "../../assets/home.svg";
+import { ReactComponent as Explore } from "../../assets/explore.svg";
+import { ReactComponent as Notifications } from "../../assets/notifications.svg";
+import { ReactComponent as Messages } from "../../assets/messages.svg";
 import { ReactComponent as lists } from "../../assets/lists.svg";
-import { ReactComponent as Bookmarks } from "../../assets/Bookmarks.svg";
-import { ReactComponent as Profile } from "../../assets/Bookmarks.svg";
-import { ReactComponent as More } from "../../assets/More.svg";
+import { ReactComponent as Bookmarks } from "../../assets/bookmarks.svg";
+import { ReactComponent as Profile } from "../../assets/bookmarks.svg";
+import { ReactComponent as More } from "../../assets/more.svg";
 import LeftSidbarItme from "./components/LeftSidbarItem";
 import UserProfile from "./components/UserProfile";
 const LeftSide = () => {

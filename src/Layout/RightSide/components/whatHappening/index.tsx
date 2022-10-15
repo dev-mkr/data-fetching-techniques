@@ -1,16 +1,10 @@
+import useStore from "../../../../store/store";
 import WhatHappeningLoader from "./WhatHappeningLoader";
-import useFetch from "../../../../hooks/useFetch";
 import WhatHappeningTopic from "./WhatHappeningTopic";
-type whatsHappeningResponse = {
-  name: string;
-  tweetsCount: string;
-}[];
 
 const WhatHappening = () => {
-  const [isError, whatsHappeningResponse] = useFetch<whatsHappeningResponse>(
-    "https://run.mocky.io/v3/01855673-8177-44a4-b988-e5ad7b48c59a?mocky-delay=1000ms"
-  );
-
+  const whatsHappeningResponse = useStore((state) => state.whatHappeningData);
+  console.log(whatsHappeningResponse);
   const WhatHappening =
     whatsHappeningResponse &&
     whatsHappeningResponse.map((props) => (
@@ -22,7 +16,6 @@ const WhatHappening = () => {
       <span className="text-md block w-full p-3 font-bold text-white">
         What’s happening
       </span>
-      {isError && <div>Something went wrong ...</div>}
       {!whatsHappeningResponse ? (
         <>
           <WhatHappeningLoader />
